@@ -22,7 +22,9 @@ Switch → Layer 2 cihaz
 
 ![Network Topology](topology.png)
 
+
 ⚙️ Yapılan İşlemler
+
 1️⃣ Router IP Yapılandırması
 enable
 configure terminal
@@ -32,9 +34,11 @@ no shutdown
 exit
 
 2️⃣ Enable Şifresi Tanımlama
+
 enable secret cisco
 
 3️⃣ Telnet (VTY) Yapılandırması
+
 line vty 0 4
 password cisco
 login
@@ -49,6 +53,7 @@ access-list 10 permit 192.168.1.3
 access-list 10 deny any
 
 5️⃣ ACL’nin VTY Hattına Uygulanması
+
 line vty 0 4
 access-class 10 in
 exit
@@ -73,3 +78,4 @@ Implicit deny mantığı
 
 
 Telnet şifreleri şifrelemez. Gerçek ağ ortamlarında Telnet yerine SSH kullanılması önerilir.
+

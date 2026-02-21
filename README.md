@@ -66,14 +66,19 @@ access-list 10 deny any
 5️⃣ ACL’nin VTY Hattına Uygulanması
 
 line vty 0 4
+
 access-class 10 in
+
 exit
+
 
 🧪 Test Sonuçları
 
 Cihaz	                Telnet Sonucu
-PC0 (192.168.1.3)	✅ Bağlanabiliyor
-PC1 (192.168.1.4)	❌ Engelleniyor
+
+PC0 (192.168.1.3)	   ✅ Bağlanabiliyor
+
+PC1 (192.168.1.4)	   ❌ Engelleniyor
 
 
 🧠 Bu Projeden Öğrenilenler
@@ -89,5 +94,6 @@ Implicit deny mantığı
 
 
 Telnet şifreleri şifrelemez. Gerçek ağ ortamlarında Telnet yerine SSH kullanılması önerilir.
+
 
 

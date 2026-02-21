@@ -74,7 +74,7 @@ exit
 
 🧪 Test Sonuçları
 
-Cihaz	                              Telnet Sonucu
+Cihaz--------------Telnet Sonucu
 
 PC0 (192.168.1.3)	   ✅ Bağlanabiliyor
 
@@ -94,6 +94,7 @@ Implicit deny mantığı
 
 
 Telnet şifreleri şifrelemez. Gerçek ağ ortamlarında Telnet yerine SSH kullanılması önerilir.
+
 
 
 

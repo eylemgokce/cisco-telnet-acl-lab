@@ -26,12 +26,19 @@ Switch → Layer 2 cihaz
 ⚙️ Yapılan İşlemler
 
 1️⃣ Router IP Yapılandırması
+
 enable
+
 configure terminal
+
 interface gig0/0
+
 ip address 192.168.1.1 255.255.255.0
+
 no shutdown
+
 exit
+
 
 2️⃣ Enable Şifresi Tanımlama
 
@@ -40,9 +47,13 @@ enable secret cisco
 3️⃣ Telnet (VTY) Yapılandırması
 
 line vty 0 4
+
 password cisco
+
 login
+
 transport input telnet
+
 exit
 
 4️⃣ ACL Oluşturma
@@ -78,4 +89,5 @@ Implicit deny mantığı
 
 
 Telnet şifreleri şifrelemez. Gerçek ağ ortamlarında Telnet yerine SSH kullanılması önerilir.
+
 

@@ -12,9 +12,13 @@ Sadece belirli bir IP adresinin routera Telnet ile bağlanmasına izin verilmiş
 🖥️ Topoloji
 
 PC0 → 192.168.1.3 (Yetkili - Bağlanabilir)
+
 PC1 → 192.168.1.4 (Yetkisiz - Engellenir)
+
 Router → 192.168.1.1
+
 Switch → Layer 2 cihaz
+
 
 ![Network Topology](topology.png)
 
@@ -66,5 +70,6 @@ ACL’nin VTY hattına uygulanması
 Implicit deny mantığı
 
 🔒 Güvenlik Notu
+
 
 Telnet şifreleri şifrelemez. Gerçek ağ ortamlarında Telnet yerine SSH kullanılması önerilir.
